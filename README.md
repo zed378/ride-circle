@@ -1,18 +1,18 @@
 # RideCircle — Documentation & Project Scaffold
 
-Platform untuk merekam, menemukan, menjalankan, membagikan, dan mengelola perjalanan serta komunitas pengendara motor — dirancang motorcycle-native, bukan "Strava + ikon motor".
+A platform for recording, discovering, riding, sharing, and managing motorcycle rides and rider communities — designed motorcycle-native, not "Strava + a motorcycle icon".
 
-> **MVP saat ini = Ride Tracking + Social Media Share.** Baca `docs/47-ROADMAP/01-MVP-SCOPE.md` sebelum membaca apa pun lagi di repo ini.
+> **Current MVP = Ride Tracking + Social Media Share.** Read `docs/47-ROADMAP/01-MVP-SCOPE.md` before reading anything else in this repo.
 
-## Struktur repo
+## Repository structure
 
-Mengikuti konvensi `TASKS/`+`MEMORY/`+`CLAUDE.md`+`AGENTS.md` yang sama dengan proyek [`zed-auth`](https://github.com/zed378/zed-auth) milik penulis — `docs/` = referensi (apa yang harus dibangun), `TASKS/` = rencana eksekusi (apa selanjutnya, bagaimana dinilai selesai), `MEMORY/` = catatan perubahan & keputusan (apa yang sudah terjadi, kenapa).
+Follows the same `TASKS/`+`MEMORY/`+`CLAUDE.md`+`AGENTS.md` convention as the author's [`zed-auth`](https://github.com/zed378/zed-auth) project — `docs/` = reference (what to build), `TASKS/` = execution plan (what's next, how it's judged done), `MEMORY/` = change & decision log (what happened, and why).
 
 ```
 ridecircle-docs/
-├── docs/                          48 folder kategori dokumentasi produk (00-47)
+├── docs/                          48 product documentation category folders (00-47)
 ├── backend/
-│   └── docs/CODING_STANDARDS.md   NestJS + TypeScript + Prisma, storage driver-agnostic (ADR-010, ADR-011)
+│   └── docs/CODING_STANDARDS.md   NestJS + TypeScript + Prisma, driver-agnostic storage (ADR-010, ADR-011)
 ├── android/
 │   └── docs/CODING_STANDARDS.md   Kotlin + Jetpack Compose + MVVM (ADR-006)
 ├── ios/
@@ -20,50 +20,50 @@ ridecircle-docs/
 ├── web/
 │   └── docs/CODING_STANDARDS.md   Next.js — landing page + admin dashboard (ADR-008)
 ├── MEMORY/
-│   ├── README.md                  cara pakai folder ini
-│   ├── MEMORY-INDEX.md             satu baris per change record, terbaru di atas
-│   ├── DECISIONS.md               ADR log — semua keputusan arsitektur
-│   ├── CHANGELOG.md               ringkasan kronologis perubahan
-│   ├── GLOSSARY.md                istilah domain RideCircle
-│   ├── ARCHITECTURE-NOTES.md      catatan teknis informal, belum matang jadi ADR
-│   ├── records/                   satu file per task yang sudah DONE
-│   └── templates/                 template change record & phase summary
+│   ├── README.md                  how to use this folder
+│   ├── MEMORY-INDEX.md             one line per change record, newest first
+│   ├── DECISIONS.md               ADR log — all architecture decisions
+│   ├── CHANGELOG.md               chronological summary of changes
+│   ├── GLOSSARY.md                RideCircle domain terms
+│   ├── ARCHITECTURE-NOTES.md      informal technical notes, not yet mature enough for an ADR
+│   ├── records/                   one file per task that reached DONE
+│   └── templates/                 change record & phase summary templates
 ├── TASKS/
-│   ├── README.md                  cara pakai folder ini
-│   ├── 00-TASK-CONVENTIONS.md     skema task ID, status, Definition of Done
-│   ├── PROGRESS.md                status board — satu tempat lihat progres
-│   ├── PHASE-0-FOUNDATION.md      12 task: setup repo, tech stack, skema DB, storage
-│   ├── PHASE-1-MVP-TRACKING.md    14 task: GPS, ride recording, history
-│   ├── PHASE-2-MVP-SOCIAL-SHARE.md 12 task: auth, feed, kudos, share card
-│   ├── PHASE-3-WEB.md             8 task: landing page + admin moderation dashboard
-│   ├── specs/T3-02-landing-page.md  brief desain lengkap (di-paste user) — T3-02 BLOCKED, lihat OQ-09
-│   └── BACKLOG.md                 pertanyaan terbuka & item yang ditunda
-├── CLAUDE.md                      instruksi kerja untuk Claude Code
-├── AGENTS.md                      instruksi setara untuk AI coding agent lain
-└── README.md                      file ini
+│   ├── README.md                  how to use this folder
+│   ├── 00-TASK-CONVENTIONS.md     task ID scheme, statuses, Definition of Done
+│   ├── PROGRESS.md                status board — one place to see progress
+│   ├── PHASE-0-FOUNDATION.md      12 tasks: repo setup, tech stack, DB schema, storage
+│   ├── PHASE-1-MVP-TRACKING.md    14 tasks: GPS, ride recording, history
+│   ├── PHASE-2-MVP-SOCIAL-SHARE.md 12 tasks: auth, feed, kudos, share card
+│   ├── PHASE-3-WEB.md             8 tasks: landing page + admin moderation dashboard
+│   ├── specs/T3-02-landing-page.md  full design brief (pasted by the user) — T3-02 BLOCKED, see OQ-09
+│   └── BACKLOG.md                 open questions & deferred items
+├── CLAUDE.md                      working instructions for Claude Code
+├── AGENTS.md                      equivalent instructions for other AI coding agents
+└── README.md                      this file
 ```
 
-## Mulai dari sini
+## Start here
 
-Urutan baca yang disarankan untuk siapa pun (manusia atau AI agent) yang baru bergabung ke proyek ini:
+Recommended reading order for anyone (human or AI agent) joining this project:
 
-1. `docs/00-PRODUCT/00-PRODUCT-VISION.md` — visi jangka panjang
-2. `docs/47-ROADMAP/01-MVP-SCOPE.md` — **batas scope yang berlaku sekarang**
-3. `docs/00-PRODUCT/05-NON-GOALS.md` — apa yang sengaja TIDAK dibangun dulu
-4. `docs/07-DOMAIN/00-DOMAIN-MODEL.md` — model data inti
-5. `docs/08-ARCHITECTURE/00-ARCHITECTURE-OVERVIEW.md` — arsitektur & tech stack (**sudah di-freeze** — Android/Kotlin native, iOS/Swift native, web Next.js, backend NestJS/TypeScript dengan storage driver-agnostic (default disk lokal), lihat `MEMORY/DECISIONS.md` ADR-006, ADR-008, ADR-010, ADR-011)
-6. `backend/docs/CODING_STANDARDS.md`, `android/docs/CODING_STANDARDS.md`, `ios/docs/CODING_STANDARDS.md`, `web/docs/CODING_STANDARDS.md` — konvensi coding per platform
-7. `TASKS/PROGRESS.md` — status board, mulai kerja dari sini
-8. `MEMORY/DECISIONS.md` § Decisions Pending — hal yang masih perlu diputuskan sebelum sebagian task bisa jalan
+1. `docs/00-PRODUCT/00-PRODUCT-VISION.md` — long-term vision
+2. `docs/47-ROADMAP/01-MVP-SCOPE.md` — **the scope boundary currently in force**
+3. `docs/00-PRODUCT/05-NON-GOALS.md` — what is deliberately NOT being built yet
+4. `docs/07-DOMAIN/00-DOMAIN-MODEL.md` — core data model
+5. `docs/08-ARCHITECTURE/00-ARCHITECTURE-OVERVIEW.md` — architecture & tech stack (**frozen** — native Android/Kotlin, native iOS/Swift, Next.js web, NestJS/TypeScript backend with driver-agnostic storage (local disk by default), see `MEMORY/DECISIONS.md` ADR-006, ADR-008, ADR-010, ADR-011)
+6. `backend/docs/CODING_STANDARDS.md`, `android/docs/CODING_STANDARDS.md`, `ios/docs/CODING_STANDARDS.md`, `web/docs/CODING_STANDARDS.md` — per-platform coding conventions
+7. `TASKS/PROGRESS.md` — status board, start work from here
+8. `MEMORY/DECISIONS.md` § Decisions Pending — things that still need deciding before some tasks can proceed
 
-## Status dokumen
+## Document status
 
-Setiap file di `docs/` punya penanda `**Status:** MVP` atau `**Status:** Post-MVP` di bagian atas.
+Every file in `docs/` carries a `**Status:** MVP` or `**Status:** Post-MVP` marker at the top.
 
-- **MVP** (57 file ditandai) — 31 di antaranya sudah ditulis lengkap (requirement, skema data, edge case): Authentication, Rider Profile, Ride Recording/History/Analytics, GPS engine (sampling/speed/distance/pause-resume), Ride lifecycle & sharing, Social feed/graph, Comments & Kudos, Share Card, Location compliance, Roadmap. Sisanya (26 file, seluruhnya di folder `13-GPS`, `16-RIDE`, `24-SOCIAL`) ditandai MVP karena folder-nya masuk pilar Tracking/Social Share, tapi isinya masih stub template — perlu didetailkan sebelum sprint dimulai.
-- **Post-MVP** (358 file) — placeholder/scaffold untuk referensi arah arsitektur jangka panjang (Motorcycle identity, Moto Club, Group Ride, Safety, Route Discovery, Event, Challenge, Gamification, Monetization, Brand Partnership, AI, dst). **Belum untuk diimplementasikan** — lihat `docs/47-ROADMAP/00-ROADMAP.md` untuk urutan fase berikutnya.
+- **MVP** (57 files tagged) — 31 of them are fully written (requirements, data schema, edge cases): Authentication, Rider Profile, Ride Recording/History/Analytics, GPS engine (sampling/speed/distance/pause-resume), Ride lifecycle & sharing, Social feed/graph, Comments & Kudos, Share Card, Location compliance, Roadmap. The rest (26 files, all in the `13-GPS`, `16-RIDE`, and `24-SOCIAL` folders) are tagged MVP because their folder belongs to the Tracking/Social Share pillars, but their content is still a template stub — they need detailing before a sprint starts.
+- **Post-MVP** (358 files) — placeholders/scaffolding that point at the long-term architectural direction (Motorcycle identity, Moto Club, Group Ride, Safety, Route Discovery, Event, Challenge, Gamification, Monetization, Brand Partnership, AI, etc.). **Not to be implemented yet** — see `docs/47-ROADMAP/00-ROADMAP.md` for the order of later phases.
 
-## Index 47 kategori dokumentasi
+## Index of the 47 documentation categories
 
 ```
 00-PRODUCT            01-PRD                02-BUSINESS           03-MARKET
@@ -80,14 +80,14 @@ Setiap file di `docs/` punya penanda `**Status:** MVP` atau `**Status:** Post-MV
 44-TESTING            45-COMPLIANCE         46-RELEASE            47-ROADMAP
 ```
 
-## Status eksekusi saat ini
+## Current execution status
 
-**1 / 46 task selesai.** Tech stack sudah di-freeze (`T0-01`, ADR-006 + ADR-008 + ADR-010 + ADR-011); `docs/` dan coding standards empat platform (backend, Android, iOS, web) sudah lengkap sebagai scaffold; belum ada baris kode aplikasi yang ditulis. Lihat `TASKS/PROGRESS.md` untuk detail per task, `MEMORY/CHANGELOG.md` untuk ringkasan histori.
+**1 / 46 tasks done.** The tech stack is frozen (`T0-01`, ADR-006 + ADR-008 + ADR-010 + ADR-011); `docs/` and the coding standards for all four platforms (backend, Android, iOS, web) are complete as scaffolding; no application code has been written yet. See `TASKS/PROGRESS.md` for per-task detail and `MEMORY/CHANGELOG.md` for a history summary.
 
-## Untuk AI coding agent
+## For AI coding agents
 
-Baca `CLAUDE.md` (jika menggunakan Claude Code) atau `AGENTS.md` (agent lain) sebelum mulai bekerja di repo ini. Aturan intinya sama: **kerjakan hanya task yang berasal dari dokumen berstatus MVP, ikuti `TASKS/00-TASK-CONVENTIONS.md`, tulis MEMORY record sebelum menandai task DONE, dan konfirmasi ke user sebelum menyentuh apa pun yang berstatus Post-MVP atau item di `TASKS/BACKLOG.md` / `MEMORY/DECISIONS.md` § Decisions Pending.**
+Read `CLAUDE.md` (if using Claude Code) or `AGENTS.md` (other agents) before starting work in this repo. The core rules are the same: **only work on tasks derived from MVP-status documents, follow `TASKS/00-TASK-CONVENTIONS.md`, write a MEMORY record before marking a task DONE, and confirm with the user before touching anything Post-MVP or any item in `TASKS/BACKLOG.md` / `MEMORY/DECISIONS.md` § Decisions Pending.**
 
 ---
 
-*Dokumentasi ini di-generate dari brief rekomendasi struktur dokumentasi produk motorcycle-native, dipersempit ke scope MVP (Ride Tracking + Social Media Share) sesuai keputusan produk. Struktur `TASKS/`/`MEMORY/`/`CLAUDE.md`/`AGENTS.md` mengikuti konvensi dari repo `zed-auth` milik penulis.*
+*This documentation was generated from a brief recommending a documentation structure for a motorcycle-native product, narrowed to the MVP scope (Ride Tracking + Social Media Share) per the product decision. The `TASKS/`/`MEMORY/`/`CLAUDE.md`/`AGENTS.md` structure follows the conventions of the author's `zed-auth` repo.*
