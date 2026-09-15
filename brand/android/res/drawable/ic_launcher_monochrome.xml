@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 13+ themed icon. Generated from ridecircle-symbol.svg -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="8.198"
+        android:translateY="8.198"
+        android:scaleX="0.458"
+        android:scaleY="0.458">
+        <path
+            android:pathData="M145.96,138.57 A60,60 0 0 1 89.58,159.09"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="3"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M89.58,159.09 A60,60 0 0 1 43.62,120.52"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="7"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M43.62,120.52 A60,60 0 0 1 54.04,61.43"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="11"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M54.04,61.43 A60,60 0 0 1 110.42,40.91"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="15"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M110.42,40.91 A60,60 0 0 1 156.38,79.48"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="21"
+            android:strokeLineCap="round" />
+    </group>
+</vector>

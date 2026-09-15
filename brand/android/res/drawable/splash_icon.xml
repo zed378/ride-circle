@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 12+ SplashScreen icon. Generated from ridecircle-symbol.svg -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="288dp"
+    android:height="288dp"
+    android:viewportWidth="288"
+    android:viewportHeight="288">
+    <group
+        android:translateX="15.756"
+        android:translateY="15.756"
+        android:scaleX="1.282"
+        android:scaleY="1.282">
+        <path
+            android:pathData="M145.96,138.57 A60,60 0 0 1 89.58,159.09"
+            android:strokeColor="#D8FF3E"
+            android:strokeWidth="3"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M89.58,159.09 A60,60 0 0 1 43.62,120.52"
+            android:strokeColor="#D8FF3E"
+            android:strokeWidth="7"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M43.62,120.52 A60,60 0 0 1 54.04,61.43"
+            android:strokeColor="#D8FF3E"
+            android:strokeWidth="11"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M54.04,61.43 A60,60 0 0 1 110.42,40.91"
+            android:strokeColor="#D8FF3E"
+            android:strokeWidth="15"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M110.42,40.91 A60,60 0 0 1 156.38,79.48"
+            android:strokeColor="#D8FF3E"
+            android:strokeWidth="21"
+            android:strokeLineCap="round" />
+    </group>
+</vector>

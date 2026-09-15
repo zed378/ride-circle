@@ -1,0 +1,9 @@
+{
+  "name": "ridecircle-brand-tools",
+  "private": true,
+  "type": "module",
+  "description": "Renders brand SVGs to PNG for build_brand.py",
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2"
+  }
+}

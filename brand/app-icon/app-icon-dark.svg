@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="RideCircle app icon (dark appearance)">
+  <title>RideCircle app icon (dark appearance)</title>
+  <g transform="translate(27.358 27.358) scale(4.846)">
+    <path d="M145.96,138.57 A60,60 0 0 1 89.58,159.09" fill="none" stroke="#D8FF3E" stroke-width="3" stroke-linecap="round"/>
+    <path d="M89.58,159.09 A60,60 0 0 1 43.62,120.52" fill="none" stroke="#D8FF3E" stroke-width="7" stroke-linecap="round"/>
+    <path d="M43.62,120.52 A60,60 0 0 1 54.04,61.43" fill="none" stroke="#D8FF3E" stroke-width="11" stroke-linecap="round"/>
+    <path d="M54.04,61.43 A60,60 0 0 1 110.42,40.91" fill="none" stroke="#D8FF3E" stroke-width="15" stroke-linecap="round"/>
+    <path d="M110.42,40.91 A60,60 0 0 1 156.38,79.48" fill="none" stroke="#D8FF3E" stroke-width="21" stroke-linecap="round"/>
+  </g>
+</svg>

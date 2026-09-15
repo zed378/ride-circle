@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Notification small icon (white silhouette). Generated from ridecircle-symbol.svg -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group
+        android:translateX="-4.031"
+        android:translateY="-4.031"
+        android:scaleX="0.16"
+        android:scaleY="0.16">
+        <path
+            android:pathData="M145.96,138.57 A60,60 0 0 1 89.58,159.09"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="10"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M89.58,159.09 A60,60 0 0 1 43.62,120.52"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="13"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M43.62,120.52 A60,60 0 0 1 54.04,61.43"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="16"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M54.04,61.43 A60,60 0 0 1 110.42,40.91"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="19"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M110.42,40.91 A60,60 0 0 1 156.38,79.48"
+            android:strokeColor="#FFFFFFFF"
+            android:strokeWidth="23"
+            android:strokeLineCap="round" />
+    </group>
+</vector>
